@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"output.css"}
+{"version":3,"sourceRoot":"","sources":["partials/_variables.scss","input.scss"],"names":[],"mappings":"AAAQ;ACER;EACI;EACA,aDFQ","file":"output.css"}
