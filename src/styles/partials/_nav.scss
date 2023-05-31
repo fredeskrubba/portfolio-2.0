@@ -1,1 +1,17 @@
 @use "./variables";
+
+.mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(90deg, rgba(57,181,203,1) 40%, rgba(52,227,206,1) 91%);
+    border-image-slice: 1;
+    img{
+        width: 40px;
+    }
+    .socials{
+        display: flex;
+        gap: 25px;
+    }
+}

@@ -1,6 +1,14 @@
 @use "./partials/variables";
+@use "./partials/nav";
+@use "./partials/header";
 
 body{
     background-color: variables.$color-1;
     font-family: variables.$main-font;
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
 }

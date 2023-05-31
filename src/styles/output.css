@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 5px solid;
+  border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
+  border-image-slice: 1;
+}
+.mobile-nav img {
+  width: 40px;
+}
+.mobile-nav .socials {
+  display: flex;
+  gap: 25px;
+}
+
 body {
   background-color: #363636;
   font-family: "Play", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 /*# sourceMappingURL=output.css.map */
