@@ -1,6 +1,7 @@
 @use "./partials/variables";
 @use "./partials/nav";
 @use "./partials/header";
+@use "./partials/projects";
 
 body{
     background-color: variables.$color-1;
@@ -11,4 +12,15 @@ body{
 
 p, h1, h2, h3, h4, h5, h6{
     margin: 0;
+}
+
+.more-button{
+    color: variables.$color-2;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    border: 5px solid;
+    border-image-source: linear-gradient(90deg, rgba(57,181,203,1) 40%, rgba(52,227,206,1) 91%);
+    border-image-slice: 1;
+    padding: 15px 0;
 }

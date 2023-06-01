@@ -41,6 +41,13 @@
   padding: 15px 0;
 }
 
+.projects {
+  padding: 25px 20px;
+}
+.projects .section-title {
+  color: #39B5CB;
+}
+
 body {
   background-color: #363636;
   font-family: "Play", sans-serif;
@@ -50,6 +57,17 @@ body {
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+.more-button {
+  color: #39B5CB;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  border: 5px solid;
+  border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
+  border-image-slice: 1;
+  padding: 15px 0;
 }
 
 /*# sourceMappingURL=output.css.map */
