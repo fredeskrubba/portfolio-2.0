@@ -112,7 +112,9 @@
   height: 150px;
   object-fit: cover;
   object-position: 50% 40%;
-  border: 5px solid #39B5CB;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
   box-sizing: border-box;
 }
 .about .about-intro {
