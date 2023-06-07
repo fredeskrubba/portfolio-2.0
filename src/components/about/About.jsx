@@ -41,6 +41,7 @@ const About = () => {
                 skills.map((skill) => <Skill key={skill.id} Logo={skill.logo} name={skill.name}/>)
             }
         </figure>
+        <p className="more-button">Se Mere</p>
     </section>
   )
 }
