@@ -2,14 +2,20 @@
 .mobile-nav {
   display: flex;
   justify-content: space-between;
+  background-color: #363636;
+  box-sizing: border-box;
   padding: 15px 20px;
   border-bottom: 5px solid;
-  border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
   border-image-slice: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .mobile-nav svg {
   width: 40px;
   height: 40px;
+  fill: #39B5CB;
 }
 .mobile-nav .socials {
   display: flex;
@@ -26,8 +32,9 @@
   flex-direction: column;
   gap: 40px;
   border-bottom: 5px solid;
-  border-image-source: linear-gradient(90deg, rgb(52, 227, 206) 40%, rgb(57, 181, 203) 91%);
+  border-image-source: linear-gradient(90deg, #34E3CE 40%, #39B5CB 91%);
   border-image-slice: 1;
+  margin-top: 70px;
 }
 .header h1 {
   color: #39B5CB;
@@ -38,7 +45,7 @@
   font-size: 35px;
   font-weight: 700;
   border: 4px solid;
-  border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
   border-image-slice: 1;
   text-align: center;
   border-radius: 100px;
@@ -57,7 +64,7 @@
   color: #39B5CB;
   border: 5px solid;
   border-bottom: none;
-  border-image-source: linear-gradient(180deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
+  border-image-source: linear-gradient(180deg, #39B5CB 40%, #34E3CE 91%);
   border-image-slice: 1;
   width: 100%;
   box-sizing: border-box;
@@ -114,7 +121,7 @@
   object-position: 50% 40%;
   border: 5px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
   box-sizing: border-box;
 }
 .about .about-intro {
@@ -146,11 +153,57 @@
   width: 60px;
 }
 
+.contact {
+  padding: 25px 20px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+.contact form input {
+  padding: 10px;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+  border-image-slice: 1;
+  background-color: #363636;
+  color: #39B5CB;
+  font-family: "Play", sans-serif;
+}
+.contact form input::placeholder {
+  color: #39B5CB;
+  font-family: "Play", sans-serif;
+}
+.contact form input:focus {
+  outline: none;
+  color: #39B5CB;
+}
+.contact form textarea {
+  padding: 10px;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+  border-image-slice: 1;
+  height: 100px;
+  background-color: #363636;
+  font-family: "Play", sans-serif;
+  resize: none;
+  color: #39B5CB;
+}
+.contact form textarea::placeholder {
+  color: #39B5CB;
+  font-family: "Play", sans-serif;
+}
+.contact form textarea:focus {
+  outline: none;
+}
+
 body {
   background-color: #363636;
   font-family: "Play", sans-serif;
   margin: 0;
   padding: 0;
+  color: #39B5CB;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -166,6 +219,25 @@ p, h1, h2, h3, h4, h5, h6 {
   border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
   border-image-slice: 1;
   padding: 15px 0;
+}
+
+.mobile-footer {
+  background-color: #34E3CE;
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+}
+.mobile-footer .social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #363636;
+  gap: 5px;
+}
+.mobile-footer .social-container svg {
+  fill: #363636;
+  height: 60px;
+  width: 60px;
 }
 
 /*# sourceMappingURL=output.css.map */

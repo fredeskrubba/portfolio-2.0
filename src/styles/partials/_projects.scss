@@ -10,7 +10,7 @@
         color: variables.$color-2;
         border: 5px solid;
         border-bottom: none;
-        border-image-source: linear-gradient(180deg, rgba(57,181,203,1) 40%, rgba(52,227,206,1) 91%);
+        border-image-source: linear-gradient(180deg, variables.$color-2 40%, variables.$color-3 91%);
         border-image-slice: 1;
         width: 100%;
         box-sizing: border-box;
