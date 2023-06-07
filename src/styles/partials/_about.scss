@@ -1,0 +1,42 @@
+@use "./variables";
+
+.about{
+    padding: 25px 20px;
+    .about-picture{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        object-position: 50% 40%;
+        border: 5px solid variables.$color-2;
+        box-sizing: border-box;
+    }
+    .about-intro{
+        color: variables.$color-2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        h2{
+            font-size: 35px;
+        }
+    }
+    .skill-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: space-between;
+        margin: 0;
+        margin-top: 30px;
+        .skill{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: variables.$color-2;
+            gap: 10px;
+            svg{
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+}
