@@ -3,13 +3,19 @@
 .mobile-nav{
     display: flex;
     justify-content: space-between;
+    background-color: variables.$color-1;
+    box-sizing: border-box;
     padding: 15px 20px;
     border-bottom: 5px solid;
-    border-image-source: linear-gradient(90deg, rgba(57,181,203,1) 40%, rgba(52,227,206,1) 91%);
+    border-image-source: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
     border-image-slice: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
     svg{
         width: 40px;
         height: 40px;
+        fill: variables.$color-2;
     }
     .socials{
         display: flex;

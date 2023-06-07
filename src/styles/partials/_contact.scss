@@ -1,0 +1,46 @@
+@use "../partials/variables";
+
+.contact{
+    padding: 25px 20px;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+        input{
+            padding: 10px;
+            border: 3px solid;
+            border-image-source: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
+            border-image-slice: 1;
+            background-color: variables.$color-1;
+            color: variables.$color-2;
+            font-family: variables.$main-font;
+            &::placeholder{
+                color: variables.$color-2;
+                font-family: variables.$main-font;
+            }
+            &:focus{
+                outline: none;
+                color: variables.$color-2;
+            }
+        }
+        textarea{
+            padding: 10px;
+            border: 3px solid;
+            border-image-source: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
+            border-image-slice: 1;
+            height: 100px;
+            background-color: variables.$color-1;
+            font-family: variables.$main-font;
+            resize: none;
+            color: variables.$color-2;
+            &::placeholder{
+                color: variables.$color-2;
+                font-family: variables.$main-font;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
