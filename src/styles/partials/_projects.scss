@@ -1,11 +1,11 @@
 @use "./variables";
 
+.section-title{
+    color: variables.$color-2;
+    margin-bottom: 15px;
+}
 .projects{
     padding: 25px 20px;
-    .section-title{
-        color: variables.$color-2;
-        margin-bottom: 15px;
-    }
     .project{
         color: variables.$color-2;
         border: 5px solid;
