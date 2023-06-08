@@ -28,6 +28,8 @@
         grid-template-columns: 1fr 1fr 1fr;
         align-items: space-between;
         margin: 30px 0;
+        row-gap: 40px;
+        column-gap: 30px;
         .skill{
             display: flex;
             flex-direction: column;
