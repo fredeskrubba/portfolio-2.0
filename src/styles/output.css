@@ -40,6 +40,9 @@
   color: #39B5CB;
   font-size: 40px;
 }
+.header a {
+  text-decoration: none;
+}
 .header p {
   color: #39B5CB;
   font-size: 35px;
