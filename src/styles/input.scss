@@ -23,12 +23,12 @@ p, h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     text-align: center;
     border: 5px solid;
-    border-image-source: linear-gradient(90deg, rgba(57,181,203,1) 40%, rgba(52,227,206,1) 91%);
+    border-image-source: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
     border-image-slice: 1;
     padding: 15px 0;
 }
 .mobile-footer{
-    background-color: variables.$color-3;
+    background: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
     display: flex;
     padding: 20px;
     gap: 15px;

@@ -5,6 +5,7 @@ import Skill from './Skill'
 import {ReactComponent as HtmlLogo} from "../../assets/icons/html-icon.svg"
 import {ReactComponent as CssLogo} from "../../assets/icons/css-icon.svg"
 import {ReactComponent as JsLogo} from "../../assets/icons/js-icon.svg"
+import { useState } from 'react'
 
 const About = () => {
     const skills = [
@@ -22,8 +23,40 @@ const About = () => {
             id: 3,
             name: "JS",
             logo: <JsLogo/>
-        }
+        },
+        {
+            id: 1,
+            name: "HTML",
+            logo: <HtmlLogo/>
+        },
+        {
+            id: 2,
+            name: "CSS",
+            logo: <CssLogo/>
+        },
+        {
+            id: 3,
+            name: "JS",
+            logo: <JsLogo/>
+        },
+        {
+            id: 1,
+            name: "HTML",
+            logo: <HtmlLogo/>
+        },
+        {
+            id: 2,
+            name: "CSS",
+            logo: <CssLogo/>
+        },
+        {
+            id: 3,
+            name: "JS",
+            logo: <JsLogo/>
+        },
     ]
+
+    const [skillsShown, setSkillsShown] = useState(3)
   return (
     <section className='about'>
         <article className="section-title">
@@ -38,10 +71,10 @@ const About = () => {
         </article>
         <figure className='skill-grid'>
             {
-                skills.map((skill) => <Skill key={skill.id} Logo={skill.logo} name={skill.name}/>)
+                skills.slice(0, skillsShown).map((skill) => <Skill key={skill.id} Logo={skill.logo} name={skill.name}/>)
             }
         </figure>
-        <p className="more-button">Se Mere</p>
+        <p className="more-button" onClick={()=> setSkillsShown(skillsShown + 3)}>Se Mere</p>
     </section>
   )
 }

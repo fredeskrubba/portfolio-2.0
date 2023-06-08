@@ -68,7 +68,7 @@
   border-image-slice: 1;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .projects .project img {
   width: 100%;
@@ -140,6 +140,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: space-between;
   margin: 30px 0;
+  row-gap: 40px;
+  column-gap: 30px;
 }
 .about .skill-grid .skill {
   display: flex;
@@ -216,13 +218,13 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-align: center;
   border: 5px solid;
-  border-image-source: linear-gradient(90deg, rgb(57, 181, 203) 40%, rgb(52, 227, 206) 91%);
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
   border-image-slice: 1;
   padding: 15px 0;
 }
 
 .mobile-footer {
-  background-color: #34E3CE;
+  background: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
   display: flex;
   padding: 20px;
   gap: 15px;
