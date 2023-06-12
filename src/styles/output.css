@@ -99,6 +99,20 @@
   padding: 15px 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 20px 30px;
+    padding-bottom: 60px;
+    border-bottom: 3px solid;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 70px;
+  }
+  .header .resume {
+    width: 150px;
+  }
+}
 .section-title {
   color: #39B5CB;
   margin-bottom: 15px;
