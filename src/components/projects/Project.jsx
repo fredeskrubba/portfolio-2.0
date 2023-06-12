@@ -4,11 +4,14 @@ import {ReactComponent as RedirectLogo} from "../../assets/icons/redirect-icon.s
 const Project = ({title, img, description, techs, alt}) => {
   return (
     <div className='project'>
-        <img src={img} alt={alt} />
-        <article className="project-info">
-            <h2>{title}</h2>
-            <p>{description}</p>
-        </article>
+        <section className="project-header">
+            <img src={img} alt={alt} />
+            <article className="project-info">
+                <h2>{title}</h2>
+                <p>{description}</p>
+            </article>
+        </section>
+        
         <article className="bottom-bar">
             <div className='technologies'>
                 {

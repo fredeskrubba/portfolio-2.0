@@ -131,14 +131,17 @@
   box-sizing: border-box;
   margin-bottom: 50px;
 }
-.projects .project img {
+.projects .project .project-header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.projects .project .project-header img {
   width: 100%;
-  height: 80px;
+  height: 90px;
   object-fit: cover;
 }
-.projects .project .project-info {
+.projects .project .project-header .project-info {
   padding: 10px 15px;
-  border-top: 5px solid #39B5CB;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -160,6 +163,7 @@
   color: #34E3CE;
   background-color: #363636;
   padding: 10px;
+  font-weight: 700;
 }
 .projects .project .bottom-bar .project-buttons {
   display: flex;
@@ -172,6 +176,32 @@
   height: 35px;
 }
 
+@media only screen and (min-width: 768px) {
+  .section-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .projects .project {
+    border: 4px solid;
+    border-bottom: none;
+    border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+    border-image-slice: 1;
+  }
+  .projects .project .project-header {
+    grid-template-columns: 1fr 2fr;
+  }
+  .projects .project .project-header img {
+    height: 100%;
+    width: 100%;
+    border-right: 4px solid #39B5CB;
+  }
+  .projects .project .bottom-bar {
+    background: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+  }
+  .projects .project .bottom-bar .technologies p {
+    color: #39B5CB;
+  }
+}
 .about {
   padding: 25px 20px;
 }
