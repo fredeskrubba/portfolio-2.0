@@ -28,3 +28,49 @@
         }
     }
 }
+
+.desktop-nav{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-nav{
+    display: none;
+  }
+
+  .desktop-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: variables.$color-1;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
+    border-image-slice: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 22px;
+        a{
+            color: variables.$color-2;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+    .socials{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        svg{
+            fill: variables.$color-2;
+            color: variables.$color-2;
+            width: 35px;
+            height: 35px;
+        }
+    }
+  }
+}
