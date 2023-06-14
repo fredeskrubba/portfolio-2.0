@@ -45,3 +45,14 @@ p, h1, h2, h3, h4, h5, h6{
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .more-button{
+        width: 50%;
+        margin: auto;
+    }
+
+    .mobile-footer{
+        display: none;
+    }
+}
