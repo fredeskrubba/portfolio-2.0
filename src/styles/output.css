@@ -228,7 +228,7 @@
 }
 .about .skill-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: space-between;
   margin: 30px 0;
   row-gap: 40px;
@@ -246,6 +246,28 @@
   width: 60px;
 }
 
+@media only screen and (min-width: 768px) {
+  .about .about-picture {
+    height: 300px;
+  }
+  .about .about-intro {
+    margin: 50px 30px;
+    gap: 30px;
+  }
+  .about .about-intro h2 {
+    font-size: 60px;
+  }
+  .about .about-intro p {
+    font-size: 30px;
+  }
+  .about .skill-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .about .skill-grid .skill svg {
+    width: 90px;
+    height: 90px;
+  }
+}
 .contact {
   padding: 25px 20px;
 }
@@ -331,6 +353,13 @@ p, h1, h2, h3, h4, h5, h6 {
   fill: #363636;
   height: 60px;
   width: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .more-button {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

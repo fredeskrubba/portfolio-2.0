@@ -56,7 +56,7 @@ const About = () => {
         },
     ]
 
-    const [skillsShown, setSkillsShown] = useState(3)
+    const [skillsShown, setSkillsShown] = useState(4)
   return (
     <section className='about'>
         <article className="section-title">
@@ -74,7 +74,7 @@ const About = () => {
                 skills.slice(0, skillsShown).map((skill) => <Skill key={skill.id} Logo={skill.logo} name={skill.name}/>)
             }
         </figure>
-        <p className="more-button" onClick={()=> setSkillsShown(skillsShown + 3)}>Se Mere</p>
+        <p className="more-button" onClick={()=> setSkillsShown(skillsShown + 4)}>Se Mere</p>
     </section>
   )
 }
