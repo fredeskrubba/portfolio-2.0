@@ -271,13 +271,13 @@
 .contact {
   padding: 25px 20px;
 }
-.contact form {
+.contact .mobile-contact form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 20px 0;
 }
-.contact form input {
+.contact .mobile-contact form input {
   padding: 10px;
   border: 3px solid;
   border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
@@ -286,15 +286,15 @@
   color: #39B5CB;
   font-family: "Play", sans-serif;
 }
-.contact form input::placeholder {
+.contact .mobile-contact form input::placeholder {
   color: #39B5CB;
   font-family: "Play", sans-serif;
 }
-.contact form input:focus {
+.contact .mobile-contact form input:focus {
   outline: none;
   color: #39B5CB;
 }
-.contact form textarea {
+.contact .mobile-contact form textarea {
   padding: 10px;
   border: 3px solid;
   border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
@@ -305,14 +305,100 @@
   resize: none;
   color: #39B5CB;
 }
-.contact form textarea::placeholder {
+.contact .mobile-contact form textarea::placeholder {
   color: #39B5CB;
   font-family: "Play", sans-serif;
 }
-.contact form textarea:focus {
+.contact .mobile-contact form textarea:focus {
   outline: none;
 }
+.contact .desktop-contact {
+  display: none;
+}
+.contact .desktop-contact .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.contact .desktop-contact .contact-grid form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .desktop-contact .contact-grid form input {
+  padding: 10px;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+  border-image-slice: 1;
+  background-color: #363636;
+  color: #39B5CB;
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+}
+.contact .desktop-contact .contact-grid form input::placeholder {
+  color: #39B5CB;
+  font-family: "Play", sans-serif;
+}
+.contact .desktop-contact .contact-grid form input:focus {
+  outline: none;
+  color: #39B5CB;
+}
+.contact .desktop-contact .contact-grid form textarea {
+  padding: 10px;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+  border-image-slice: 1;
+  height: 150px;
+  background-color: #363636;
+  font-family: "Play", sans-serif;
+  resize: none;
+  color: #39B5CB;
+  font-size: 20px;
+}
+.contact .desktop-contact .contact-grid form textarea::placeholder {
+  color: #39B5CB;
+  font-family: "Play", sans-serif;
+}
+.contact .desktop-contact .contact-grid form textarea:focus {
+  outline: none;
+}
+.contact .desktop-contact .contact-grid form .more-button {
+  width: 100%;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+  border-image-slice: 1;
+  box-sizing: border-box;
+}
+.contact .desktop-contact .contact-grid .contact-info {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact .desktop-contact .contact-grid .contact-info .desktop-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact .desktop-contact .contact-grid .contact-info .desktop-socials .social-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contact .desktop-contact .contact-grid .contact-info .desktop-socials .social-info svg {
+  height: 50px;
+  width: 50px;
+  fill: #39B5CB;
+}
 
+@media only screen and (min-width: 768px) {
+  .mobile-contact {
+    display: none;
+  }
+  .desktop-contact {
+    display: block !important;
+  }
+}
 body {
   background-color: #363636;
   font-family: "Play", sans-serif;
@@ -359,6 +445,9 @@ p, h1, h2, h3, h4, h5, h6 {
   .more-button {
     width: 50%;
     margin: auto;
+  }
+  .mobile-footer {
+    display: none;
   }
 }
 
