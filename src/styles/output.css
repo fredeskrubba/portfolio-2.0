@@ -69,6 +69,15 @@
     height: 35px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .desktop-nav {
+    padding: 20px 70px;
+  }
+  .desktop-nav .nav-links {
+    font-size: 30px;
+    gap: 45px;
+  }
+}
 .header {
   padding: 25px 20px;
   padding-bottom: 40px;
@@ -113,6 +122,11 @@
     width: 150px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .header {
+    padding: 40px 70px;
+  }
+}
 .section-title {
   color: #39B5CB;
   margin-bottom: 15px;
@@ -139,6 +153,7 @@
   width: 100%;
   height: 90px;
   object-fit: cover;
+  display: block;
 }
 .projects .project .project-header .project-info {
   padding: 10px 15px;
@@ -202,10 +217,15 @@
     color: #39B5CB;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .projects {
+    padding: 25px 70px;
+  }
+}
 .about {
   padding: 25px 20px;
 }
-.about .about-picture {
+.about .mobile-about .about-picture {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -215,7 +235,7 @@
   border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
   box-sizing: border-box;
 }
-.about .about-intro {
+.about .mobile-about .about-intro {
   color: #39B5CB;
   text-align: center;
   display: flex;
@@ -223,7 +243,34 @@
   gap: 15px;
   margin-top: 10px;
 }
-.about .about-intro h2 {
+.about .mobile-about .about-intro h2 {
+  font-size: 35px;
+}
+.about .desktop-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 150px;
+}
+.about .desktop-about .about-picture {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: 50% 40%;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
+  box-sizing: border-box;
+}
+.about .desktop-about .about-intro {
+  color: #39B5CB;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+.about .desktop-about .about-intro h2 {
   font-size: 35px;
 }
 .about .skill-grid {
@@ -266,6 +313,38 @@
   .about .skill-grid .skill svg {
     width: 90px;
     height: 90px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about {
+    padding: 25px 70px;
+  }
+  .about .mobile-about {
+    display: none;
+  }
+  .about .desktop-about {
+    margin-bottom: 100px;
+  }
+  .about .desktop-about .about-picture {
+    height: 270px;
+  }
+  .about .desktop-about .about-intro-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about .desktop-about .about-intro-desktop h2 {
+    font-size: 40px;
+  }
+  .about .desktop-about .about-intro-desktop p {
+    font-size: 20px;
+  }
+  .about .skill-grid {
+    margin: 90px 0;
+  }
+  .about .skill-grid .skill svg {
+    width: 120px;
+    height: 120px;
   }
 }
 .contact {
@@ -399,6 +478,11 @@
     display: block !important;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .contact {
+    padding: 25px 70px;
+  }
+}
 body {
   background-color: #363636;
   font-family: "Play", sans-serif;
@@ -448,6 +532,14 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .mobile-footer {
     display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .section-title {
+    font-size: 20px;
+  }
+  .more-button {
+    width: 30%;
   }
 }
 
