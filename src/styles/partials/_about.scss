@@ -27,7 +27,7 @@
     }
 
     .desktop-about{
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr;
         gap: 80px;
         margin-bottom: 150px;
@@ -109,6 +109,7 @@
     
         .desktop-about{
             margin-bottom: 100px;
+            display: grid;
             .about-picture{
                 height: 270px;
             }
