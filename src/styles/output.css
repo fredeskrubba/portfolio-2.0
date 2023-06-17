@@ -127,6 +127,11 @@
     padding: 40px 70px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
 .section-title {
   color: #39B5CB;
   margin-bottom: 15px;
