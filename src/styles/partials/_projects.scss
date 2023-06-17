@@ -39,7 +39,7 @@
             justify-content: space-between;
             padding: 10px;
             .technologies{
-                display: flex;
+                display: none;
                 align-items: center;
                 gap: 15px;
                 p{
@@ -52,8 +52,10 @@
             }
             .project-buttons{
                 display: flex;
-                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
                 gap: 20px;
+                align-items: center;
                 .project-button{
                     color: variables.$color-1 !important;
                     width: 35px;
@@ -89,9 +91,14 @@
             .bottom-bar{
                 background: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
                 .technologies{
+                    display: flex;
                     p{
                         color: variables.$color-2;
                     }
+                }
+                .project-buttons{
+                    width: initial;
+                    justify-content: initial;
                 }
             }
         }
