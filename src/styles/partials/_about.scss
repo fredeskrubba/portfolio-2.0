@@ -140,3 +140,39 @@
         }
     }
 }
+@media only screen and (min-width: 2560px) {
+    .about{
+        
+        .desktop-about{
+            .about-picture{
+                height: 600px;
+            }
+
+            .about-intro-desktop{
+
+                h2{
+                    font-size: 80px;
+                }
+
+                p{
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .skill-grid{
+            margin: 200px 0;
+            gap: 150px;
+            .skill{
+                gap: 30px;
+                svg{
+                    width: 250px;
+                    height: 250px;
+                }
+                h3{
+                    font-size: 80px;
+                }
+            }
+        }
+    }
+}
