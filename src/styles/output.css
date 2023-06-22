@@ -265,6 +265,35 @@
     padding: 25px 70px;
   }
 }
+@media only screen and (min-width: 2560px) {
+  .projects .project .project-header .project-info {
+    padding: 20px 40px;
+    gap: 20px;
+  }
+  .projects .project .project-header .project-info h2 {
+    font-size: 60px;
+  }
+  .projects .project .project-header .project-info p {
+    font-size: 35px;
+  }
+  .projects .project .bottom-bar {
+    padding: 40px 30px;
+  }
+  .projects .project .bottom-bar .technologies {
+    gap: 50px;
+  }
+  .projects .project .bottom-bar .technologies .technology {
+    padding: 25px 40px;
+    font-size: 40px;
+  }
+  .projects .project .bottom-bar .project-buttons {
+    gap: 60px;
+  }
+  .projects .project .bottom-bar .project-buttons .project-button {
+    width: 80px;
+    height: 80px;
+  }
+}
 .about {
   padding: 25px 20px;
 }
@@ -590,6 +619,16 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .more-button {
     width: 30%;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .section-title {
+    font-size: 40px;
+  }
+  .more-button {
+    width: 30%;
+    font-size: 50px;
+    padding: 40px;
   }
 }
 
