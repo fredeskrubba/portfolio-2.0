@@ -85,3 +85,20 @@
         }
     }
 }
+@media only screen and (min-width: 2560px) {
+   
+    .desktop-nav{
+        padding: 45px 70px;
+        .nav-links{
+            font-size: 50px;
+            gap: 45px;
+        }
+        .socials{
+            gap: 40px;
+            svg{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
