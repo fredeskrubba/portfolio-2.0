@@ -141,3 +141,35 @@
         padding: 25px 70px;
     }
 }
+
+@media only screen and (min-width: 2560px) {
+    .contact{
+        .desktop-contact{
+            .contact-grid{
+                .contact-info{
+                    p{
+                        font-size: 40px;
+                    }
+                    .desktop-socials{
+                        gap: 30px;
+                        .social-info{
+                            gap: 20px;
+                        }
+                    }
+                }
+                form{
+                    gap: 30px;
+                    input{
+                        font-size: 40px;
+                        padding: 25px;
+                    }
+                    textarea{
+                        font-size: 40px;
+                        padding: 25px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -581,6 +581,29 @@
     padding: 25px 70px;
   }
 }
+@media only screen and (min-width: 2560px) {
+  .contact .desktop-contact .contact-grid .contact-info p {
+    font-size: 40px;
+  }
+  .contact .desktop-contact .contact-grid .contact-info .desktop-socials {
+    gap: 30px;
+  }
+  .contact .desktop-contact .contact-grid .contact-info .desktop-socials .social-info {
+    gap: 20px;
+  }
+  .contact .desktop-contact .contact-grid form {
+    gap: 30px;
+  }
+  .contact .desktop-contact .contact-grid form input {
+    font-size: 40px;
+    padding: 25px;
+  }
+  .contact .desktop-contact .contact-grid form textarea {
+    font-size: 40px;
+    padding: 25px;
+    height: 250px;
+  }
+}
 body {
   background-color: #363636;
   font-family: "Play", sans-serif;

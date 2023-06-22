@@ -34,7 +34,7 @@ const About = () => {
         },
         {
             id: 4,
-            name: "react",
+            name: "React",
             logo: <ReactLogo/>
         },
         {
