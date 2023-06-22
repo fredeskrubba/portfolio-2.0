@@ -79,7 +79,7 @@ const About = () => {
     <section className='about'>
         <article className="section-title">
           <h2>Om Mig</h2>
-          <img src={arrow} alt="arrow" />
+          <img src={arrow} alt="arrow" className='arrow'/>
         </article>
         <section className="mobile-about">
             <img src={picture} alt="selfie" className='about-picture'/>
