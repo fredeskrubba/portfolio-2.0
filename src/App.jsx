@@ -5,16 +5,24 @@ import About from "./components/about/About"
 import Contact from "./components/contact/Contact"
 import {ReactComponent as GithubLogo} from "./assets/icons/github-icon.svg"
 import {ReactComponent as LinkedinLogo} from "./assets/icons/linkedin-icon.svg"
+import * as Scroll from 'react-scroll';
 
 function App() {
   
+  let Element = Scroll.Element
   return (
     <>
       <Nav/>
       <Header/>
-      <Projects/>
-      <About/>
-      <Contact/>
+      <Element name="projects">
+        <Projects/>
+      </Element>
+      <Element name="about">
+        <About/>
+      </Element>
+      <Element name="contact">
+        <Contact/>
+      </Element>
       <footer className='mobile-footer'>
             <div className="social-container">
                 <GithubLogo/>

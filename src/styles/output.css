@@ -57,6 +57,9 @@
     text-decoration: none;
     font-weight: 700;
   }
+  .desktop-nav .nav-links a:hover {
+    cursor: pointer;
+  }
   .desktop-nav .socials {
     display: flex;
     align-items: center;
@@ -625,6 +628,9 @@ p, h1, h2, h3, h4, h5, h6 {
   border-image-source: linear-gradient(90deg, #39B5CB 40%, #34E3CE 91%);
   border-image-slice: 1;
   padding: 15px 0;
+}
+.more-button:hover {
+  cursor: pointer;
 }
 
 .mobile-footer {
