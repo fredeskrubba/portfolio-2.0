@@ -5,6 +5,14 @@ import Skill from './Skill'
 import {ReactComponent as HtmlLogo} from "../../assets/icons/html-icon.svg"
 import {ReactComponent as CssLogo} from "../../assets/icons/css-icon.svg"
 import {ReactComponent as JsLogo} from "../../assets/icons/js-icon.svg"
+import {ReactComponent as ReactLogo} from "../../assets/icons/react-icon.svg"
+import {ReactComponent as NodeLogo} from "../../assets/icons/node-icon.svg"
+import {ReactComponent as TailwindLogo} from "../../assets/icons/tailwind-icon.svg"
+import {ReactComponent as BootstrapLogo} from "../../assets/icons/bootstrap-icon.svg"
+import {ReactComponent as NextLogo} from "../../assets/icons/next-icon.svg"
+import {ReactComponent as SqlLogo} from "../../assets/icons/sql-icon.svg"
+import {ReactComponent as MongodbLogo} from "../../assets/icons/mongodb-icon.svg"
+import {ReactComponent as GitLogo} from "../../assets/icons/git-icon.svg"
 import { useState } from 'react'
 
 const About = () => {
@@ -25,34 +33,44 @@ const About = () => {
             logo: <JsLogo/>
         },
         {
-            id: 1,
-            name: "HTML",
-            logo: <HtmlLogo/>
+            id: 4,
+            name: "React",
+            logo: <ReactLogo/>
         },
         {
-            id: 2,
-            name: "CSS",
-            logo: <CssLogo/>
+            id: 5,
+            name: "Node",
+            logo: <NodeLogo/>
         },
         {
-            id: 3,
-            name: "JS",
-            logo: <JsLogo/>
+            id: 6,
+            name: "Tailwind",
+            logo: <TailwindLogo/>
         },
         {
-            id: 1,
-            name: "HTML",
-            logo: <HtmlLogo/>
+            id: 7,
+            name: "Bootstrap",
+            logo: <BootstrapLogo/>
         },
         {
-            id: 2,
-            name: "CSS",
-            logo: <CssLogo/>
+            id: 8,
+            name: "Next",
+            logo: <NextLogo/>
         },
         {
-            id: 3,
-            name: "JS",
-            logo: <JsLogo/>
+            id: 9,
+            name: "SQL",
+            logo: <SqlLogo/>
+        },
+        {
+            id: 10,
+            name: "MongoDB",
+            logo: <MongodbLogo/>
+        },
+        {
+            id: 11,
+            name: "Git",
+            logo: <GitLogo/>
         },
     ]
 
@@ -61,7 +79,7 @@ const About = () => {
     <section className='about'>
         <article className="section-title">
           <h2>Om Mig</h2>
-          <img src={arrow} alt="arrow" />
+          <img src={arrow} alt="arrow" className='arrow'/>
         </article>
         <section className="mobile-about">
             <img src={picture} alt="selfie" className='about-picture'/>

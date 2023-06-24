@@ -15,7 +15,7 @@ const Contact = () => {
       <div className='mobile-contact'>
           <article className="section-title">
             <h2>Kontakt</h2>
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow"/>
           </article>
           <p>Kan du lide hvad du ser? Jeg er altid klar på en god snak over en kop kaffe, eller korrespondance via e-mail.</p>
           <form>
@@ -28,7 +28,7 @@ const Contact = () => {
       <div className='desktop-contact'>
         <article className="section-title">
           <h2>Kontakt</h2>
-          <img src={arrow} alt="arrow" />
+          <img src={arrow} alt="arrow" className='arrow'/>
         </article>
         <section className='contact-grid'>
           <article className='contact-info'>

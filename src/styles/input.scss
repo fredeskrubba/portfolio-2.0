@@ -26,7 +26,12 @@ p, h1, h2, h3, h4, h5, h6{
     border-image-source: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
     border-image-slice: 1;
     padding: 15px 0;
+    &:hover{
+        cursor: pointer;
+    }
 }
+
+
 .mobile-footer{
     background: linear-gradient(90deg, variables.$color-2 40%, variables.$color-3 91%);
     display: flex;
@@ -70,5 +75,20 @@ p, h1, h2, h3, h4, h5, h6{
     }
     .more-button{
         width: 30%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+
+    .section-title{
+        font-size: 40px
+    }
+    .more-button{
+        width: 30%;
+        font-size: 50px;
+        padding: 40px;
+    }
+    .arrow{
+        display: none;
     }
 }

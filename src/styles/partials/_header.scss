@@ -64,3 +64,16 @@
         }
     }
 }
+@media only screen and (min-width: 2560px) {
+    .header{
+        padding: 120px 70px;
+        h1{
+            font-size: 180px;
+        }
+        .resume{
+            width: 20%;
+            padding: 50px;
+            font-size: 80px;
+        }
+    }
+}

@@ -110,3 +110,39 @@
         padding: 25px 70px;
     }
 }
+@media only screen and (min-width: 2560px) {
+    .projects{
+        .project{
+            .project-header{
+
+                .project-info{
+                    padding: 20px 40px;
+                    gap: 20px;
+                    h2{
+                        font-size: 60px;
+                    }
+                    p{
+                        font-size: 35px;
+                    }
+                }
+            }
+            .bottom-bar{
+                padding: 40px 30px;
+                .technologies{
+                    gap: 50px;
+                    .technology{
+                        padding: 25px 40px;
+                        font-size: 40px;
+                    }
+                }
+                .project-buttons{
+                    gap: 60px;
+                    .project-button{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}

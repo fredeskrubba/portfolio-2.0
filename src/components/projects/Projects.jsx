@@ -33,7 +33,7 @@ const Projects = () => {
     <section className='projects'>
         <article className="section-title">
           <h2>Projekter</h2>
-          <img src={arrow} alt="arrow" />
+          <img src={arrow} alt="arrow" className="arrow" />
         </article>
         
         {
