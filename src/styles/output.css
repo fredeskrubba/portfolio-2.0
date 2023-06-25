@@ -25,10 +25,47 @@
   color: #39B5CB;
 }
 
+.mobile-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #363636;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-modal .mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.mobile-modal svg {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  bottom: 240px;
+  left: 120px;
+}
+
 .desktop-nav {
   display: none;
 }
 
+@media screen and (min-width: 375px) {
+  .mobile-modal svg {
+    left: 150px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .mobile-modal svg {
+    left: 170px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -631,6 +668,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .more-button:hover {
   cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
 }
 
 .mobile-footer {

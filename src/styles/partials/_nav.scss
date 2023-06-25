@@ -29,9 +29,52 @@
     }
 }
 
+.mobile-modal{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: variables.$color-1;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .mobile-nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    svg{
+        height: 35px;
+        width: 35px;
+        position: relative;
+        bottom: 240px;
+        left: 120px;
+    }
+}
 .desktop-nav{
     display: none;
 }
+
+@media screen and (min-width: 375px) {
+    .mobile-modal{
+        svg{
+            left: 150px;
+        }
+    }
+}
+@media screen and (min-width: 425px) {
+    .mobile-modal{
+        svg{
+            left: 170px;
+        }
+    }
+}
+
 
 @media only screen and (min-width: 768px) {
   .mobile-nav{
