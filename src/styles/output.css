@@ -25,6 +25,33 @@
   color: #39B5CB;
 }
 
+.mobile-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #363636;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-modal .mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.mobile-modal svg {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  bottom: 240px;
+  left: 170px;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -631,6 +658,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .more-button:hover {
   cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
 }
 
 .mobile-footer {
