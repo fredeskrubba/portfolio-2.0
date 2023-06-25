@@ -25,9 +25,9 @@ const Nav = () => {
           setShowNav(false)
         }}/>
           <section className="mobile-nav-links">
-            <p>Projekter</p>
-            <p>Om Mig</p>
-            <p>Kontakt</p>
+            <Link  smooth={true} to="projects" offset={-60} spy={true} onClick={()=>{setShowNav(false)}}>Projekter</Link>
+            <Link  smooth={true} to="projects" offset={460} spy={true} onClick={()=>{setShowNav(false)}}>Om Mig</Link>
+            <Link  smooth={true} to="contact" onClick={()=>{setShowNav(false)}}>Kontakt</Link>
           </section>
         </div>
       <section className="desktop-nav">

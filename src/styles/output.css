@@ -49,13 +49,23 @@
   width: 35px;
   position: relative;
   bottom: 240px;
-  left: 170px;
+  left: 120px;
 }
 
 .desktop-nav {
   display: none;
 }
 
+@media screen and (min-width: 375px) {
+  .mobile-modal svg {
+    left: 150px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .mobile-modal svg {
+    left: 170px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .mobile-nav {
     display: none;
